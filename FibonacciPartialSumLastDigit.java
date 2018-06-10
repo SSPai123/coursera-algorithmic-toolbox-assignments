@@ -6,19 +6,18 @@ import java.util.*;
 * last digit repeats every 60 numbers.
 */
 public class FibonacciPartialSumLastDigit {
-  //Here m=from and n=to
+        //Here m=from and n=to
 	private static long getFibonacciPartialSum(long from, long to) {
 		long sum = 0;
     
-    //Reduces very large numbers to manageable form
+                //Reduces very large numbers to manageable form
 		from = from % 60;
 		to = to % 60;
-    //While this reduction if "to" is less than "from" it introduces errors, hence add 60 to it to make to>from for 
-    //proper calculation of partial sum
-		if (to < from) {
+                //While this reduction if "to" is less than "from" it introduces errors, hence add 60 to it to make to>from for 
+                //proper calculation of partial sum
+		if (to < from) 
 			to += 60;
-		}
-    
+		
 		long current = 0;
 		long next = 1;
 
