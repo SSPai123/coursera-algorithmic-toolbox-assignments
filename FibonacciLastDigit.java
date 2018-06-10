@@ -4,9 +4,9 @@ public class FibonacciLastDigit {
 
     private static int getFibonacciLastDigit(int n) {
     	//return the number as it is if it is 1 or 0
-    	 if(n==1 || n==0) {
+    	 if(n==1 || n==0) 
    		  return n;
-  		}
+  		
     	
     	/**
     	 * We just need to focus on the last digits of first 60 fibonacci series because of the 
