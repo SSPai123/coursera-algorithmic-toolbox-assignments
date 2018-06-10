@@ -3,16 +3,16 @@ import java.util.*;
 /*to compute 𝐹𝑛 modulo 𝑚, where 𝑛 may be really huge*/
 public class FibonacciHuge {
 
-	private static long getFibonacciHuge(long n, long m) {
-		if (n <= 1)
-			return n;
-    
     /**
     * We know that for any integer 𝑚 ≥ 2, the sequence 𝐹𝑛 mod 𝑚 is periodic. The period always
     * starts with 01 and is known as Pisano period.
     * Find the length of that period by performing 𝐹i mod 𝑚 for all i<=n.
     * n can be reduced to n mod the length of Pisano period
     */
+	private static long getFibonacciHuge(long n, long m) {
+		if (n <= 1)
+			return n;
+    
 		n = n % getPeriodicLength(m);
 		if(n==0) {
 			return 0;
