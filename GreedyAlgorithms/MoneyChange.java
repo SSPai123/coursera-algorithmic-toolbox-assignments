@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Change {
+public class MoneyChange {
 
 	public static int getChange(int[] denominations, int amount) {
 		// If amount equals 0 and denominations are not available, return 0
